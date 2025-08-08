@@ -2,7 +2,7 @@ import pandas as pd
 #Read data from CSV file into a DataFrames
 df = pd.read_csv("data.csv")
 
-#data write
+#data write 
 print("Full Data: ")
 print(df)
 #only show the city column
