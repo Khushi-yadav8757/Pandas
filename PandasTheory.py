@@ -25,5 +25,26 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 -----------------------------------------------------------------------------------------
-
 📌 Rows + Columns = Excel-like table
+------------------------------------------------------------------------------------------
+Reading & Writing Data (VERY IMPORTANT)
+Read CSV
+df = pd.read_csv('data.csv')
+
+Read Excel
+df = pd.read_excel('data.xlsx')
+
+Save Data
+df.to_csv('output.csv', index=False)
+df.to_excel('output.xlsx', index=False)
+
+📌 Interview Question:
+index=False → removes index column
+
+5️⃣ Basic Data Exploration (Daily Use)
+df.head()        # first 5 rows
+df.tail()        # last 5 rows
+df.shape         # rows, columns
+df.columns       # column names
+df.info()        # data types & nulls
+df.describe()    # statistical summary
